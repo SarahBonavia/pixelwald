@@ -1,0 +1,73 @@
+
+@font-face {
+    font-family: 'Roboto Flex';
+    
+    src: url('fonts/RobotoFlex-Regular.ttf') format('truetype');
+
+}
+
+
+
+h1 {background-color: lightblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+
+h2 {color: darkblue;
+    font-family: 'Times New Roman', serif;
+    margin-left: 20px;
+}
+
+
+p {font-size: 16px;
+    line-height: 1.5;
+    margin: 20px;
+    font-family: 'Georgia', serif;
+}
+
+.title {font-size: 24px;
+    color: darkred;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+
+.title_background {background-color: lightgray;
+    padding: 5px;
+}
+
+
+
+.highlight {background-color: yellow;
+    font-weight: bold;
+}
+
+
+.headerlist {list-style-type: square;
+    margin-left: 40px;
+    color: darkgreen;
+}
+
+.button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    line-height: ;
+    display: inline;
+    font-weight: bold;
+    margin: ;
+
+}
+
+
+
+
+
+
