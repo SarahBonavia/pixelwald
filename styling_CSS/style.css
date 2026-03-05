@@ -1,51 +1,86 @@
 
-@font-face {
-    font-family: 'Roboto Flex';
-    
-    src: url('fonts/RobotoFlex-Regular.ttf') format('truetype');
-
-}
 
 body {
     margin: 0;
     padding: 0;
     background-color: black;
-}
-
-h1 {
-    color: white;
-    margin-left: 20px;
     font-family: 'Roboto Flex', sans-serif;
-}
-
-h2 {color: white;
-    font-family: 'Fjord', sans-serif;
-    margin-left: 20px;
-}
-
-
-h3 {color: white;
-    font-family: 'Roboto Flex', sans-serif;
-    margin-left: 20px;
-}
-
-
-p {font-size: 16px;
-    line-height: 1.5;
-    margin: 20px;
-    font-family: 'Roboto Flex', sans-serif;
-}
-
-.whitetext {color: white;
-}
-
-.highlight {background-color: yellow;
-    font-weight: bold;
 }
 
 header {background-color: black;
     padding: 10px;
     text-align: right;
+}
+
+button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border: none;
+    cursor: pointer;
+    line-height: ;
+    display: inline;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+img {
+    margin: 20px;
+}
+
+h1 {
+    color: white;
+    margin-left: 20px;
+    font-size:4em;
+}
+
+h2 {color: white;
+    font-family: 'Fjord One', sans-serif;
+    margin-left: 20px;
+}
+
+
+h3 {color: white;
+    margin-left: 20px;
+}
+
+h4 {color: white;
+    padding: 40px 0 0 20px;
+    text-transform: uppercase;
+}
+
+p {font-size: 16px;
+    line-height: 1.5;
+    margin: 20px;
+}
+
+hr {border-color: white;
+    margin: 60px 20px 0 20px;
+}
+
+.credits {font-size: 14px;
+    color: white;
+}
+
+.credits_bold {font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
+
+.caption {font-size: 10px;
+    color: white;
+    margin-left: 20px;
+}
+
+.whitetext {color: white;
+}
+
+.blacktext {color: black;
 }
 
 .headerlist {list-style-type: square;
@@ -59,30 +94,23 @@ header {background-color: black;
     padding: 0 20px 0 20px;
 }
 
-.button {
-    background-color: blue;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    line-height: ;
-    display: inline;
-    font-weight: bold;
-
-}
-
-img {
-    margin: 20px;
-}
-
 .gallery img {
     display:block;
 }
 
 .installation {
     background-color: white;
+}
+
+.pipilotti {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0 0 20px;
 }
 
 
