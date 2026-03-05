@@ -6,18 +6,26 @@
 
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
 
-
-h1 {background-color: lightblue;
+h1 {
     color: white;
-    text-align: center;
-    padding: 10px;
-    font-family: Arial, sans-serif;
+    margin-left: 20px;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+h2 {color: white;
+    font-family: 'Fjord', sans-serif;
+    margin-left: 20px;
 }
 
 
-h2 {color: darkblue;
-    font-family: 'Times New Roman', serif;
+h3 {color: white;
+    font-family: 'Roboto Flex', sans-serif;
     margin-left: 20px;
 }
 
@@ -25,30 +33,30 @@ h2 {color: darkblue;
 p {font-size: 16px;
     line-height: 1.5;
     margin: 20px;
-    font-family: 'Georgia', serif;
+    font-family: 'Roboto Flex', sans-serif;
 }
 
-.title {font-size: 24px;
-    color: darkred;
-    text-decoration: underline;
-    margin-bottom: 10px;
+.whitetext {color: white;
 }
-
-
-.title_background {background-color: lightgray;
-    padding: 5px;
-}
-
-
 
 .highlight {background-color: yellow;
     font-weight: bold;
 }
 
+header {background-color: black;
+    padding: 10px;
+    text-align: right;
+}
 
 .headerlist {list-style-type: square;
+    display:inline-flex;
     margin-left: 40px;
-    color: darkgreen;
+    color: white;
+}
+
+.headerlist li {
+    list-style-type: none;
+    padding: 0 20px 0 20px;
 }
 
 .button {
@@ -62,9 +70,21 @@ p {font-size: 16px;
     line-height: ;
     display: inline;
     font-weight: bold;
-    margin: ;
 
 }
+
+img {
+    margin: 20px;
+}
+
+.gallery img {
+    display:block;
+}
+
+.installation {
+    background-color: white;
+}
+
 
 
 
