@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 
 
 body {
@@ -9,7 +13,8 @@ body {
 
 
 
-header {background-color: black;
+header {
+    background-color: black;
     padding: 10px;
     text-align: right;
 }
@@ -38,7 +43,10 @@ button:hover {
 
 
 img {
-    margin: 80px;
+    /* margin: 80px; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -61,26 +69,27 @@ h1, h2, h3, h4 {
 
 
 
-h2 {color: white;
-    font-family: 'Fjord One', sans-serif;
-    
+h2 {
+   padding: 40px 0 0 20px;
+   color: white;
+   font-family: 'Fjord One', sans-serif;
+   text-align: center;
 }
 
 
 
-
-
-
-h4 {color: white;
+h4 {
+    color: white;
     padding: 40px 0 0 20px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 
 
-p {font-size: 16px;
-    line-height: 1.5;
-    
+p {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 
@@ -93,51 +102,58 @@ hr {border-color: white;
 
 
 
-.credits {font-size: 14px;
+.credits {
+    font-size: 14px;
     color: white;
+    text-align: center;
 }
 
 
 
 
-.credits_bold {font-size: 14px;
+.credits_bold {
+    font-size: 14px;
     color: white;
     font-weight: bold;
+    text-align: center;
 }
 
 
 
-.caption {font-size: 10px;
+.caption {
+    font-size: 10px;
     color: white;
     margin-left: 20px;
+    text-align: center;
 }
 
 
 
-.whitetext {color: white;
+.whitetext {
+    color: white;
+    text-align: center;
 }
 
 
 
-.blacktext {color: black;
+.blacktext {
+    color: black;
 }
 
 
 
-.headerlist {list-style-type: square;
+.headerlist {
+    list-style-type: square;
     display:inline-flex;
     margin-left: 40px;
     color: white;
 }
 
 
-
-
 .headerlist li {
     list-style-type: none;
     padding: 0 20px 0 20px;
 }
-
 
 
 .gallery img {
@@ -185,7 +201,6 @@ hr {border-color: white;
 
 #hero_section h3 { 
     color: white;
-    
     font-size: clamp(1rem, 3vw, 2rem);
 }
 
@@ -199,10 +214,29 @@ hr {border-color: white;
     grid-column: 2 / span 6;
 }
 
+
 #about_section > p {
     grid-column-start: 2;
     grid-column-end: 8;
 }
+
+
+#gallery_section {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    text-align: center;
+}
+
+#gallery_section h2 {
+    grid-column-start: 2;
+    grid-column-end: 8;
+
+}
+
+#gallery_section button {
+    justify-self: center;
+}
+
 
 
 /* Utility Classes */
@@ -214,6 +248,24 @@ hr {border-color: white;
     column-gap: 64px;
 }
 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 80px;
+    column-gap: 64px;
+    text-align: center;
+}
+
+.gallery h4,
+.gallery h2,
+.gallery .gallery_button_container,
+.gallery img {
+    grid-column: 2 / 8;
+}
+
+.gallery .gallery_bild {
+    grid-column: 1 / 9;
+}
 
 
 
