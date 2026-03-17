@@ -25,14 +25,12 @@ header {
     z-index: 1000;
 }
 
-
 .headerlist {
     list-style-type: square;
     display:inline-flex;
     margin-left: 40px;
     color: white;
 }
-
 
 .headerlist li {
     list-style-type: none;
@@ -434,14 +432,6 @@ hr {
 
 /* Element Styles Credits */
 
-.credits_section {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    padding: 80px;
-    column-gap: 64px;
-    text-align: center;
-}
-
 #credits h4,
 #credits .credits_content,
 #credits .caption {
@@ -473,6 +463,13 @@ hr {
     margin-top: 40px;
 }
 
+.credits_section {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 80px;
+    column-gap: 64px;
+    text-align: center;
+}
 
 /* Footer */
 
