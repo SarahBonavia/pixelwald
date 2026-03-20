@@ -499,6 +499,86 @@ hr {
     margin-top: 40px;
 }
 
+.austellungen_toggle_container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.austellungen_toggle_container--bottom {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.austellungen_toggle {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.austellungen_toggle h4 {
+    margin: 0;
+}
+
+.austellungen_toggle_icon {
+    color: #E6006F;
+    font-size: 24px;
+    line-height: 1;
+    transition: transform 0.3s ease;
+}
+
+.austellungen_toggle[aria-expanded="true"] .austellungen_toggle_icon {
+    transform: rotate(90deg);
+}
+
+.austellungen_toggle:hover,
+.austellungen_toggle:focus-visible {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.austellungen_toggle:hover h4,
+.austellungen_toggle:focus-visible h4,
+.austellungen_toggle:hover .austellungen_toggle_icon,
+.austellungen_toggle:focus-visible .austellungen_toggle_icon {
+    color: white;
+}
+
+.austellungen_more {
+    grid-column: 1 / 9;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 64px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.45s ease, opacity 0.35s ease;
+}
+
+.austellungen_more.is-open {
+    max-height: 6000px;
+    opacity: 1;
+}
+
+.austellungen_more h2,
+.austellungen_more .austellungen_button_container,
+.austellungen_more .austellungen_bild {
+    grid-column: 2 / 8;
+}
+
+.austellungen_more .austellungen_bild--left {
+    grid-column: 1 / 5;
+}
+
+.austellungen_more .austellungen_bild--right {
+    grid-column: 5 / 9;
+}
+
 
 
 /* Element Styles Installationen */
@@ -779,6 +859,9 @@ footer {
     .austellungen h2,
     .austellungen .austellungen_button_container,
     .austellungen .austellungen_bild,
+    .austellungen .austellungen_more h2,
+    .austellungen .austellungen_more .austellungen_button_container,
+    .austellungen .austellungen_more .austellungen_bild,
     .austellungen .austellungen_bild--left,
     .austellungen .austellungen_bild--right,
     .installation h4,
@@ -795,6 +878,10 @@ footer {
     .austellungen_button_container,
     .pipilotti-icons {
         justify-content: flex-start;
+    }
+
+    .austellungen_toggle {
+        width: auto;
     }
 
     #pipilotti .pipilotti-img,
@@ -893,6 +980,9 @@ footer {
     .austellungen h2,
     .austellungen .austellungen_button_container,
     .austellungen .austellungen_bild,
+    .austellungen .austellungen_more h2,
+    .austellungen .austellungen_more .austellungen_button_container,
+    .austellungen .austellungen_more .austellungen_bild,
     .austellungen .austellungen_bild--left,
     .austellungen .austellungen_bild--right,
     .installation h4,
@@ -935,6 +1025,10 @@ footer {
 
     .austellungen .austellungen_button_container button {
         margin-bottom: 60px;
+    }
+
+    .austellungen_toggle {
+        width: auto;
     }
 
     .secondary {

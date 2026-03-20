@@ -218,6 +218,64 @@
             <img src="img/pixelwald_installation_5.jpg" alt="Pixelwald Installation in Oslo Park Ekebergparken" >
           </div>
 
+          <div class="austellungen_button_container austellungen_toggle_container">
+            <button class="austellungen_toggle" type="button" data-accordion-toggle="more-exhibitions" aria-expanded="false" aria-controls="more-exhibitions">
+              <h4 class="austellungen_toggle_label">Weitere Austellungen</h4>
+              <span class="austellungen_toggle_icon" aria-hidden="true">&gt;</span>
+            </button>
+          </div>
+
+          <div id="more-exhibitions" class="austellungen_more" hidden>
+            <h2><span class="magentatext">«</span>Ein lichtdurchfluteter Parcours zwischen Naturmotiv und digitalem Bildraum.<span class="magentatext">»</span></h2>
+
+            <div class="austellungen_button_container">
+              <button onclick="window.open('https://www.luma.org/en/arles/exhibitions/pipilotti-rist-pixelwald', '_blank')"> Pixelwald Arles — LUMA Arles — 2018 </button>
+            </div>
+
+            <div class="austellungen_bild austellungen_bild--pair austellungen_bild--left">
+              <img src="img/pixelwald_installation_1.jpg" alt="Pixelwald Installation in Arles">
+            </div>
+
+            <div class="austellungen_bild austellungen_bild--pair austellungen_bild--right">
+              <img src="img/pixelwald_installation_2.jpg" alt="Pixelwald Installation in Arles Detailansicht">
+            </div>
+
+            <h2><span class="magentatext">«</span>Farbpunkte werden zu Bewegung, wenn man durch den Raum wandert.<span class="magentatext">»</span></h2>
+
+            <div class="austellungen_button_container">
+              <button onclick="window.open('https://www.moma.org/calendar/exhibitions/5404', '_blank')"> Pixel Forest Dialogues — MoMA New York — 2020 </button>
+            </div>
+
+            <div class="austellungen_bild austellungen_bild--pair austellungen_bild--left">
+              <img src="img/pixelwald_installation_3.jpg" alt="Pixelwald Installation in New York">
+            </div>
+
+            <div class="austellungen_bild austellungen_bild--pair austellungen_bild--right">
+              <img src="img/pixelwald_installation_4.jpg" alt="Pixelwald Installation in New York Nachtansicht">
+            </div>
+
+            <h2><span class="magentatext">«</span>Zwischen Lichtfäden und Klang entsteht ein begehbares Bild.<span class="magentatext">»</span></h2>
+
+            <div class="austellungen_button_container">
+              <button onclick="window.open('https://www.serpentinegalleries.org/whats-on/pipilotti-rist/', '_blank')"> Pixelwald London — Serpentine Galleries — 2023 </button>
+            </div>
+
+            <div class="austellungen_bild austellungen_bild--pair austellungen_bild--left">
+              <img src="img/pixelwald_installation_5.jpg" alt="Pixelwald Installation in London">
+            </div>
+
+            <div class="austellungen_bild austellungen_bild--pair austellungen_bild--right">
+              <img src="img/pixelwald_installation_2.jpg" alt="Pixelwald Installation in London Detailansicht">
+            </div>
+
+            <div class="austellungen_button_container austellungen_toggle_container austellungen_toggle_container--bottom">
+              <button class="austellungen_toggle" type="button" data-accordion-toggle="more-exhibitions" aria-expanded="true" aria-controls="more-exhibitions">
+                <h4 class="austellungen_toggle_label">Schliessen</h4>
+                <span class="austellungen_toggle_icon" aria-hidden="true">&gt;</span>
+              </button>
+            </div>
+          </div>
+
         </section>
 
 
@@ -372,6 +430,8 @@
         <footer class="caption">
           <span class="footer-text">Pipilotti Rist &copy; 2026. All rights reserved.</span>
         </footer>
+
+        <script src="./js/accordion.js"></script>
 
 
   </body>
