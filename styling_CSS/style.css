@@ -202,15 +202,27 @@ header.header--hidden {
 
 .headerlist {
     list-style-type: square;
-    display:inline-flex;
-    margin-left: 40px;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     color: white;
 }
 
 .headerlist li {
     list-style-type: none;
     padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
 }
+
+.headerlist .header-brand {
+        margin-right: auto;
+        font-size: 1.2em;
+}
+
 
 .headerlist li a {
     color: white;
