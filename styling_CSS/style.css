@@ -193,6 +193,11 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+header.header--hidden {
+    transform: translateY(-110%);
 }
 
 .headerlist {
@@ -380,10 +385,11 @@ hr {
 /* Element Styles hero */
 
 #hero_section .hero_text {
-    font-size: clamp(2rem, 8vw, 4rem);
+    font-size: clamp(1.6rem, 6vw, 3.2rem);
     position: absolute;
-    bottom: 50px;
+    bottom: clamp(16px, 5vh, 50px);
     left: 40px;
+    z-index: 2;
 }
 
 #hero_section h1 {
@@ -411,8 +417,34 @@ hr {
 
 #hero_section .hero_bild {
     position: relative;
-    aspect-ratio: 16 / 9;
     width: 100%;
+    height: min(56.25vw, 88vh);
+}
+
+.sound_toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    transition: background 0.2s ease;
+}
+
+.sound_toggle:hover {
+    background: rgba(230, 0, 111, 0.7);
+    border-color: #E6006F;
 }
 
 #hero_section .hero_bild video {
@@ -582,6 +614,10 @@ hr {
 .austellungen_more .austellungen_button_container,
 .austellungen_more .austellungen_bild {
     grid-column: 2 / 8;
+}
+
+.austellungen_more .austellungen_bild--full {
+    grid-column: 1 / 9;
 }
 
 .austellungen_more .austellungen_bild--left {
@@ -836,7 +872,7 @@ footer {
     }
 
     .hero_bild h1 {
-        font-size: clamp(3rem, 10vw, 5rem);
+        font-size: clamp(2.2rem, 8vw, 3.8rem);
     }
     
     .hero_bild h3 {
@@ -891,6 +927,10 @@ footer {
     .austellungen_button_container,
     .pipilotti-icons {
         justify-content: flex-start;
+    }
+
+    .austellungen_toggle_container {
+        justify-content: center;
     }
 
     .austellungen_toggle {
@@ -1019,6 +1059,11 @@ footer {
     }
 
     /* Scale down headings */
+
+    #hero_section h1 {
+        letter-spacing: 2px;
+    }
+
     h2 {
         font-size: 1.4rem;
     }
@@ -1038,6 +1083,10 @@ footer {
 
     .austellungen .austellungen_button_container button {
         margin-bottom: 60px;
+    }
+
+    .austellungen_toggle_container {
+        justify-content: center;
     }
 
     .austellungen_toggle {

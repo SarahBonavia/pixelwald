@@ -144,11 +144,19 @@
 
           <div class="hero_bild">
             
-            <video autoplay muted loop width="100%" height="100%"> <source src="img/Video_Pixelwald_90.mp4" type="video/mp4" /> </video>
+            <video id="hero_video" autoplay muted loop width="100%" height="100%"> <source src="img/Video_Pixelwald_90.mp4" type="video/mp4" /> </video>
+
+            <button id="sound_toggle" class="sound_toggle" aria-label="Unmute video" title="Unmute">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                <line x1="22" y1="9" x2="16" y2="15"/>
+                <line x1="16" y1="9" x2="22" y2="15"/>
+              </svg>
+            </button>
 
             <div class="hero_text">
               <h1>PIXELWALD</h1>
-              <h3>Audio-, Video- und Lichtinstallation von Pipilotti Rist</h3>
+              <h3>Audio-, Video- und Lichtinstallation </br>von Pipilotti Rist</h3>
             </div>
 
           </div>
@@ -175,34 +183,16 @@
 
           <h4>Austellungen</h4>
           
-          <h2><span class="magentatext">«</span>Emerging among a generation of artists in the 1990s who experimented with video beyond the box monitor, Rist exploded video to an architectural scale. These expansions of format are matched by Rist's constantly roving camera eye, adventurously exploring the psyche, nature's wonders, and utopian fantasies in vivid color.<span class="magentatext">»</span></h2>
+          <h2><span class="magentatext">«</span>Denn Pipilotti Rist ist nicht nur eine talentierte Künstlerin, sondern sie hat auch eine soziale Ader. Sie möchte alles teilen, vor allem ihre Kunstwerke.<span class="magentatext">»</span></h2>
 
           <div class="austellungen_button_container">
-            <button onclick="window.open('https://www.moca.org/exhibition/pipilotti-rist', '_blank')"> Moca Museum of Modern Art Los Angeles — 2016 </button>
+            <button onclick="window.open('https://www.kunsthalle-bremen.de/de/view/exhibitions/exb-page/pixelwald', '_blank')"> Pixelwald Wisera — Kunsthalle Bremen — 2025 </button>
           </div>
 
           <div class="austellungen_bild">
-           <img src="img/pixelwald_installation_1.jpg" alt="Pixelwald Installation in Los Angeles" >
+           <img src="img/pixelwald_installation_wisera.jpg" alt="Pixelwald Installation in Bremen" >
           </div>
          
-
-
-          <h2><span class="magentatext">«</span>Eine digitale Landschaft, die man mit dem Körper durchqueren kann.<span class="magentatext">»</span></h2>
-
-          <div class="austellungen_button_container">
-            <button onclick="window.open('https://visitorguide.kunsthaus.ch/51936441/-30/51936441/false/0/-/-/61568477/56521877', '_blank')"> Pixelwald Turicum — Kunsthaus Zürich — 2021 </button>
-          </div>
-
-          <div class="austellungen_bild austellungen_bild--pair austellungen_bild--left">
-            <img src="img/pixelwald_installation_2.jpg" alt="Pixelwald Installation in Kunsthaus Zürich">
-          </div>
-
-          <div class="austellungen_bild austellungen_bild--pair austellungen_bild--right">
-            <img src="img/pixelwald_installation_3.jpg" alt="Pixelwald">
-          </div>
-
-
-
 
           <h2><span class="magentatext">«</span>Natürlich, leuchtend, beweglich wie das Lichtspiel eines Waldes.<span class="magentatext">»</span></h2>
 
@@ -218,6 +208,23 @@
             <img src="img/pixelwald_installation_5.jpg" alt="Pixelwald Installation in Oslo Park Ekebergparken" >
           </div>
 
+
+          <h2><span class="magentatext">«</span>Eine digitale Landschaft, die man mit dem Körper durchqueren kann.<span class="magentatext">»</span></h2>
+
+          <div class="austellungen_button_container">
+            <button onclick="window.open('https://visitorguide.kunsthaus.ch/51936441/-30/51936441/false/0/-/-/61568477/56521877', '_blank')"> Pixelwald Turicum — Kunsthaus Zürich — 2021 </button>
+          </div>
+
+          <div class="austellungen_bild austellungen_bild--pair austellungen_bild--left">
+            <img src="img/pixelwald_installation_2.jpg" alt="Pixelwald Installation in Kunsthaus Zürich">
+          </div>
+
+          <div class="austellungen_bild austellungen_bild--pair austellungen_bild--right">
+            <img src="img/pixelwald_installation_3.jpg" alt="Pixelwald Installation in Kunsthaus Zürich">
+          </div>
+
+
+
           <div class="austellungen_button_container austellungen_toggle_container">
             <button class="austellungen_toggle" type="button" data-accordion-toggle="more-exhibitions" aria-expanded="false" aria-controls="more-exhibitions">
               <h4>Weitere Austellungen</h4>
@@ -226,54 +233,45 @@
           </div>
 
           <div id="more-exhibitions" class="austellungen_more" hidden>
-            <h2><span class="magentatext">«</span>Ein lichtdurchfluteter Parcours zwischen Naturmotiv und digitalem Bildraum.<span class="magentatext">»</span></h2>
+
+            <h2><span class="magentatext">«</span>Zwischen Lichtfäden und Klang entsteht ein begehbares Bild.<span class="magentatext">»</span></h2>
 
             <div class="austellungen_button_container">
-              <button onclick="window.open('https://www.luma.org/en/arles/exhibitions/pipilotti-rist-pixelwald', '_blank')"> Pixelwald Arles — LUMA Arles — 2018 </button>
+              <button onclick="window.open('https://qm.org.qa/en/stories/all-stories/pipilotti-rist-at-qatar-museums/', '_blank')"> Light, Colour and Imagination — National Museum of Qatar — 2022 </button>
             </div>
 
             <div class="austellungen_bild austellungen_bild--pair austellungen_bild--left">
-              <img src="img/pixelwald_installation_1.jpg" alt="Pixelwald Installation in Arles">
+              <img src="img/pixelwald_installation_qatar_1.jpg" alt="Pixelwald Installation in National Museum of Qatar">
             </div>
 
             <div class="austellungen_bild austellungen_bild--pair austellungen_bild--right">
-              <img src="img/pixelwald_installation_2.jpg" alt="Pixelwald Installation in Arles Detailansicht">
+              <img src="img/pixelwald_installation_qatar_2.jpg" alt="Pixelwald Installation in National Museum of Qatar">
             </div>
 
             <h2><span class="magentatext">«</span>Farbpunkte werden zu Bewegung, wenn man durch den Raum wandert.<span class="magentatext">»</span></h2>
 
             <div class="austellungen_button_container">
-              <button onclick="window.open('https://www.moma.org/calendar/exhibitions/5404', '_blank')"> Pixel Forest Dialogues — MoMA New York — 2020 </button>
+              <button onclick="window.open('https://www.luma.org/en/live/watch/Pipilotti-Rist-Pixel-Forest-89901e30-f27a-41c9-a3a5-e14372835e0a.html', '_blank')"> Pixel Forest — Luma Museum, Arles — 2019 </button>
             </div>
 
             <div class="austellungen_bild austellungen_bild--pair austellungen_bild--left">
-              <img src="img/pixelwald_installation_3.jpg" alt="Pixelwald Installation in New York">
+              <img src="img/pixelwald_installation_2.jpg" alt="Pixelwald Installation in Arles">
             </div>
 
             <div class="austellungen_bild austellungen_bild--pair austellungen_bild--right">
-              <img src="img/pixelwald_installation_4.jpg" alt="Pixelwald Installation in New York Nachtansicht">
+              <img src="img/pixelwald_installation_3.jpg" alt="Pixelwald Installation in Arles">
             </div>
 
-            <h2><span class="magentatext">«</span>Zwischen Lichtfäden und Klang entsteht ein begehbares Bild.<span class="magentatext">»</span></h2>
+            <h2><span class="magentatext">«</span>Emerging among a generation of artists in the 1990s who experimented with video beyond the box monitor, Rist exploded video to an architectural scale. These expansions of format are matched by Rist's constantly roving camera eye, adventurously exploring the psyche, nature's wonders, and utopian fantasies in vivid color.<span class="magentatext">»</span></h2>
 
             <div class="austellungen_button_container">
-              <button onclick="window.open('https://www.serpentinegalleries.org/whats-on/pipilotti-rist/', '_blank')"> Pixelwald London — Serpentine Galleries — 2023 </button>
+              <button onclick="window.open('https://www.moca.org/exhibition/pipilotti-rist', '_blank')"> Pixel Transformer — Moca Museum of Modern Art, Los Angeles — 2016 </button>
             </div>
 
-            <div class="austellungen_bild austellungen_bild--pair austellungen_bild--left">
-              <img src="img/pixelwald_installation_5.jpg" alt="Pixelwald Installation in London">
+            <div class="austellungen_bild austellungen_bild--full">
+              <img src="img/pixelwald_installation_la.jpg" alt="Pixelwald Installation in Los Angeles " >
             </div>
-
-            <div class="austellungen_bild austellungen_bild--pair austellungen_bild--right">
-              <img src="img/pixelwald_installation_2.jpg" alt="Pixelwald Installation in London Detailansicht">
-            </div>
-
-            <div class="austellungen_button_container austellungen_toggle_container austellungen_toggle_container--bottom">
-              <button class="austellungen_toggle" type="button" data-accordion-toggle="more-exhibitions" aria-expanded="true" aria-controls="more-exhibitions">
-                <h4>Weitere Austellungen</h4>
-                <span class="austellungen_toggle_icon" aria-hidden="true">↓</span>
-              </button>
-            </div>
+            
           </div>
 
         </section>
@@ -432,6 +430,7 @@
         </footer>
 
         <script src="./js/accordion.js"></script>
+        <script src="./js/header-scroll.js"></script>
 
 
   </body>
